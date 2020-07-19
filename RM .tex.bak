@@ -1,0 +1,485 @@
+\documentclass[12pt,journal,comsoc, letterpaper, twocolumn]{IEEEtran}
+\usepackage{graphicx}
+\ifCLASSINFOpdf
+ 
+\else
+ 
+\fi
+
+
+
+\begin{document}
+
+
+\title{Routing Protocol for LLN Problems \newline}
+  
+ \author{Muhammad Ali {},Farooque Hasan Khumbar 
+ 
+  \textit{Department of CNS,} Fast NUCES, Karachi, Pakistan        
+\
+\thanks{}
+\thanks{}
+\thanks{}}
+\maketitle
+
+
+\begin{abstract}
+
+An important protocol for fast- growing And emerging technology IOT named as RPL, Routing protocol for constrained environment devices to support IOT low power devices.  In real environment about seven years of progress since RPL as standardization RFC-6550, RPL faces number of challenges in different aspect (UR, UP, security) because it provide solution for low power and low battery device scientist and researcher worked hard to improve RPL. I found 35 articles from 2009 to 2019 from which 15 articles are included in my paper. These papers not only providing a base or why (Upward routing and Downward Routing)  is important but also discuss some improvements in field placement experience RPL focuses mainly on (upward traffic delivery) UTD. Upward directing' thinks about the routing and parcel conveyance execution of RPL when traffic is streaming upwards from individual LLN gadgets to a LBR, a normal situation in information gathering WSNs and vice versa. This class likewise incorporates contemplates on outside-RPL issues, for example, interface estimation and neighbor table administration, and inside attributes of RPL.  From RPL research papers learning to propose that many number of sensitive monitoring Apps (AMI electric meter, E-price tag)  need continuously (downward routing) DR . To keep this feature RPL need to construct Reliable DR.  Side by side compare analysis of approaches of UR and DR to alleviate these assaults are carried out plus ultimately the new opportunities in NL (Network layer) are mentioned.
+\end{abstract}
+
+
+\begin{IEEEkeywords}
+RPL upward routing (UR), Downward Routing (DR), IOT, LLN
+\end{IEEEkeywords}
+
+
+
+
+
+
+
+
+
+
+
+\section{Introduction}
+
+\IEEEPARstart{R}{pl}, RPL, Due to constrained environment (in tern of Motes battery and  power) and  huge amount of IOT device (Almost every electrical node connect with internet) number of IETF scientist and Researchers developed protocol named as RPL in 2012.In real world about seven-years of progress since RPL as standardization RFC-6550. In these years IOT protocol RPL faces number of different challenges in different aspects (upward routing, Downward routing, security) due to its importance in monitoring and low power device scientist tried to improve RPL and in some of testbed experiment they will successful from those aspect out focus/survey is on RPL downward routing. UP of RPL is defined as transmission of packets from border router to every connected/joined node (node may be a Rasp-berry pi Node MCU, TelosB, Arduino) here Node is a Computation device which gathered information from different sensors and transmit data to border router/thing speak server for storage. now we understand Abstract idea of RPL moving towards importance of RPL UR.  Many number of sensitive Apps (AMI electric meter) needs continuously Downward Routes [1]
+ \newline
+
+In next section Literature review work is discussed. In section III,
+Methods( inclusion and exclusion criteria) is describes. Section IV describes
+result and section V describes the discussion . Finally section VI, described the
+conclusion and future work.
+
+
+ 
+
+\section{LITERATURE REVIEW}
+
+
+In this paper researcher encounters with the Contiki and TinyOS 
+executions of the IPv6 stack for low-control and lossy (LLN) 
+systems including the IETF 6LoWPAN adjustment layer and the 
+IETF RPL convention. Our outcomes show two autonomous usage, 
+that have great execution all alone, can have 
+an unacceptable act in a blended system arrangement and 
+that little execution contrasts can prompt vast scale contrasts 
+in conduct. This recommends IPv6 stack executions 
+for LLNs should be tried for rightness as well as 
+for execution.[1]
+
+RPL Routing metric depends on connection quality estimation 
+through ETX (Expected Transmission Count) appraisal, 
+to recognize great connections for information conveyance. Be that as it may, ETX is not adequately precise as it surveys a specific connection viewpoint, 
+number of bundle retransmissions over the connection, and disregards 
+other critical perspectives, for example, channel quality. Subsequently, 
+as affirmed by later exploratory examinations, RPL can neglect to 
+distinguish directing ways with top notch joins prompting high 
+parcel misfortune rates. In this paper, we propose an option steering 
+metric for RPL dependent on comprehensive connection quality estimation, where  a few connection measurements are joined. In light of COOJA reenactments, we exhibit that our proposed directing measurement improves RPL execution over customary directing measurements, including the RPL 
+default metric, mostly as far as bundle misfortune proportion, start to finish 
+delay, vitality proficiency, and topology soundness.[2]
+
+The Internet of Things vision predicts billions of 
+gadgets to interface the physical world to the advanced world. Detecting 
+applications, for example, basic wellbeing observing, observation or 
+brilliant structures utilize multi-bounce remote systems with high 
+thickness to achieve adequate territory inclusion. Such applications need 
+organizing stacks and directing conventions that can scale with 
+organize size and thickness while remaining vitality proficient and 
+lightweight. To this end, the IETF RoLL working gathering has 
+structured the IPv6 Routing Protocol for Low-Power and Lossy 
+Systems (RPL). This paper examines the issues of connection quality 
+estimation and neighbor the executives approaches when it comes 
+to dealing with high densities. We execute and assess unique 
+neighbor the executives arrangements and connection examining methods in 
+Contiki's RPL usage. We report on our experience 
+with a 100-hub testbed with normal 40-degree thickness. We appear 
+the affectability of high thickness steering concerning store sizes 
+what's more, directing metric instatement. At long last, we devise rules for 
+plan and usage of thickness adaptable directing conventions. 
+List Terms—Sensor systems, Routing, Scalability, RPL.[3]
+
+10 years prior as remote sensor arrange investigate took off numerous 
+specialists in the field criticized the utilization of IP as lacking and 
+in logical inconsistency to the necessities of remote sensor organizing. Since 
+at that point the field has developed, standard connections have risen, and IP 
+has advanced. In this paper, we present the plan of a total 
+IPv6-based system design for remote sensor systems. We 
+approve the design with a creation quality usage 
+that fuses numerous procedures spearheaded in the sensor arrange 
+network, including obligation cycled connect conventions, header pressure, 
+jump by-bounce sending, and proficient steering with compelling 
+interface estimation. Notwithstanding giving interoperability existing 
+IP gadgets, this usage had the capacity to accomplish a normal 
+obligation cycle of 0.65 percent, normal per-jump inertness of 62ms, and an information 
+gathering rate of 99.98 percent over a time of about a month in a genuine world 
+home-observing application where every hub produces one application 
+bundle every moment. Our outcomes beat existing frameworks 
+that don't hold fast to a specific standard or design. In light 
+of this show of full IPv6 capacity, we audit the focal 
+contentions that drove the field far from IP. We trust that the nearness 
+of a design, explicitly an IPv6-based one, gives a 
+solid establishment for remote sensor systems going ahead. [4]
+
+
+ Upkeep is a center test in all steering 
+conventions. The use of IPv6 for Low Power and Lossy 
+Systems (6LowPAN) brought about the ongoing institutionalization of a 
+devoted steering convention called RPL (Routing Protocol for Low 
+Power and Losy Neworks). In 6LowPAN, a basic test 
+exists in diminishing bundle misfortune under the stringent energyefficiency 
+command to build organize life span. Also, the 
+challenge of fizzled hubs/interfaces, and working in a lossy 
+condition where associations require fast upkeep, 
+present huge difficulties. Late endeavors at steering 
+support in RPL exhibited headways in dealing with 
+disappointments, yet under receptive instruments that react to disappointments 
+what's more, endeavor to diminish arrange down-time. In this paper we 
+structure and execute a proactive RPL (Pro-RPL) support 
+conspire that empowers the system to specifically foresee and 
+relieve disappointments before they sway arrange availability. In 
+Expert RPL we gain by an enduring record that is related with 
+RPL hubs, and screens their inclination to result in a disappointment. 
+This dynamic observing is decentralized in nature, and presents 
+an acclimating measuring stick crosswise over RPL hubs, to kill overhead 
+in usage and potential control-traffic over the system. 
+We assess the proficiency of Pro-RPL in decreasing bundle misfortune, 
+vitality utilization and broadening system lifetime by means of broad 
+recreations with the Cooja Simulator over the Contiki OS. [5]
+
+We presented ORPL, an opportunistic routing protocol
+that provides any-to-any routing in low-power IPv6 net-
+works. The opportunistic nature of ORPL brings low la-
+tency and robustness to duty-cycled networks. By adopting
+a rooted topology and moving the forwarding decision from
+the sender to the receiver, ORPL routes to any destina-
+tion using simple, scalable routing sets. Our testbed-based
+evaluation demonstrates the benets of ORPL over state-of-
+the-art solutions and for various trac patterns, including
+when routing along probabilistic Bloom lters. We believe
+the concepts of ORPL { in particular opportunistic routing
+based on routing sets { to be also applicable[6]
+
+Theoretical Customarily, directing in remote sensor systems comprises of 
+two stages: First, the directing convention chooses a next jump, 
+what's more, second, the MAC convention hangs tight for the expected goal 
+to wake up and get the information. This plan makes 
+it di cult to adjust to connect elements and presents delays 
+while trusting that the following bounce will wake up. 
+In this paper we present ORW, a reasonable artful 
+steering plan for remote sensor systems. In a dutycycled 
+setting, parcels are routed to sets of potential collectors 
+what's more, sent by the neighbor that awakens  
+rst  what's more, effectively gets the parcel. This decreases delay and 
+vitality utilization by using all neighbors as potential 
+forwarders. Besides, this builds strength to remote 
+interface elements by misusing spatial assorted variety. Our outcomes 
+demonstrate that ORW diminishes radio obligation cycles by and large 
+by half (up to 90 percent on individual hubs) and deferrals by 30 
+to 90 percent when contrasted with the best in class. [7]
+
+
+
+
+The concept of ‘LLN’ was developed for monitoring prefer to Sensor info [8]. That info stored at server/LBR (thing speak server, fire base server). For this reason Researcher and developers focus more on UR of RPL, after five-year they analyzed that many number of sensitive monitoring apps needed continuously DR such that E-price tag, to keep DR feature, RPL need to construct reliable DR. unlike simulation studies operating on ContikiRPL and TinyRPL had showed RPL DR performance is bad in contrast to unreliable DLR  [9][10].  
+
+ 
+
+
+
+\begin{figure*}
+\begin{center}
+
+
+\includegraphics[width=1\textwidth]{RPL1}
+Fig. 1 [2] outlines RPL's control messages and parent choice procedure with the least complex system structure,  a solitary DODAG in the timberland. Every hub in RPL promotes  directing measurements and requirements through DODAG data object (DIO) messages. After accepting DIO messages from its neighbors,1 a hub picks directing guardians as per  its goal work (OF) and steering data in DIO messages (e.g., RANK, DODAG ID), and afterward develops a directing topology (i.e., DODAG)
+\end{center}
+\end{figure*}
+
+\begin{figure*}
+\includegraphics[width=1\textwidth]{RPL2}
+\begin{center}
+
+
+Fig. 2 [2]
+Outline RPL's general DAG structure with numerous DODAGs and numerous RPL cases. Each RPL occasion has its very own OF for course development. The utilization of numerous cases empowers RPL to give distinctive courses unique QoS for various streams notwithstanding for a similar goal. Utilizing different DODAG roots (LBRs) gives numerous exit focuses to the Internet for way decent variety transfer speed and sensibility.
+
+\end{center}
+\end{figure*}
+
+
+Across providing base experiment and field placement Kim et al [8][9][10] Analyzed TinyRPL RPL, Due to constrained environment (in tern of Motes battery and  motes power) and  huge amount of IOT device (Almost every electrical node connect with internet) number of IETF scientist and Researchers developed protocol named as RPL in 2012.In real world about seven-years of progress since RPL as standardization RFC-6550. In these years IOT protocol RPL faces number of different challenges in different aspects (upward routing, Downward routing, security) due to its importance in monitoring and low power device scientist tried to improve RPL and in some of testbed experiment handled and updated LQI link quality information at best for the device in the parent set solely across UPT (Upward packet transmission). Here noticeable thing is, A p-node cannot detect troubleshoot or fix link failure that cause DR transmission failure and result for DR transmission failure is sluggish route update in DTC (downward-traffic-centric)  
+To lighten the failure, Kim et al. [8] suggest to remove DR by permitting the (plugged-in) border router to cover all the device in a one hop per high transmission power. That how he illustrate it .they can practice mixed node property (e.g., wall powered vs. battery-powered) for routing, which is one of RPL’s requirements. However, at the same time, he mentioned that this was not inadequate and direct method that it does not provide multihop downward routing and transmission power is regulated by 
+
+national benchmarks on range use. ORPL improves the unwavering quality of descending parcel conveyance by utilizing shrewd routing ability (i.e., spatial decent variety), and demonstrated its execution improvement over ContikiRPL through testbed tests  building [11]. Nonetheless, despite everything, it refreshes the directing measurement exclusively dependent on upward traffic, which makes downlink fail to meet expectations uplink. As of late, Kim et al. \cite{istomin2015rpl} created DT-RPL which refreshes interface quality 
+both through upward and descending traffic. This is the underlying exertion for dependable downlink, which should be improved further.
+
+IETF contracted the routing over low-control and Lossy systems (Roll) working gathering in 2008 to institutionalize a useful IPv6 directing convention for LLNs (RPL). RoLL expected that with the assistance of RPL institutionalization, different helpful applications would be acknowledged through LLN. The primary qualities of LLN are depicted in RFC6550 as pursues [11] 
+
+\begin{itemize}
+\item LLN contains a large number of obliged hubs that have restricted preparing force, memory, and once in a while vitality (when they are battery worked). 
+
+\item These obliged hubs are interconnected by Lossy connections that are normally shaky and regularly bolster just low information rates. 
+
+\item LLN underpins different traffic designs, not principally point to- point (P2P), however as a rule multipoint-to-point (MP2P) or point-to-multipoint (P2MP) 
+
+\end{itemize}
+
+
+
+LLN by taking four delegate sorts of utilizations 
+as models: urban applications in [9], mechanical applications  in [10] home mechanization in  [12], and building mechanization in  [12]
+
+Istomin et al. [13] uncovered a versatility issue of RPL's descending routing. They played out a reenactment investigation of ContikiRPL and TinyRPL utilizing COOJA test system and appeared 
+that RPL's downlink fails to meet expectations cattering conventions, for example, Trickle, as far as unwavering quality, inertness and memory 
+
+
+overhead. In particular, despite the fact that RPL beats Tricklebased  dispersal in inadequate topologies because of connection layer retransmissions, both ContikiRPL and TinyRPL have versatility  issues and experience execution corruption in high  thickness situations. Between the two, ContikiRPL performs 
+more regrettable than TinyRPL because of neighbor table flood, visit worldwide fixes, and topology beats. Despite the fact that the creators unequivocally note that the reenactment condition isn't adequate to characterize the mind boggling design of a city, they put forth a valiant effort to give sensible outcomes: designing the recreation topologies as per the genuine LLN organizations for brilliant city applications and setting the commotion floor and variety esteems 
+as per the estimations in a few testbeds, rural areas, 
+thickly occupied territories and a college grounds.
+RPL additionally imagines the utilization of blended MOPs in a solitary 
+
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{RPL4}
+One of the mostly used hardware is telosb for low power and lossy Network.Fig.4. shows its hardware board.
+\end{figure}
+
+system and RFC6550 states; "RPL does not bolster mixedmode activity, where a few hubs source course and other store directing tables: future augmentations to RPL may bolster this method of activity". Gan et al. \cite{ko2015dualmop} take the blended MOP  way to deal with calm memory overhead of putting away mode and 
+plan MERPL that craftily utilizes non-putting away mode in a putting away mode organize. Under MERPL, when a hub endures absence of memory, it sends its course table sections to the LBR and expels the passages from its directing table, which empowers source directing for those passages. In any case, MERPL was assessed utilizing recreations just, which did not demonstrate the genuine practices on asset obliged hubs in genuine channel conditions. Ko et al. [14] demonstrated that there exists a genuine availability issue when two MOPs are blended inside a solitary system. To address this issue, the creators proposed Dual MOP-RPL that bolsters hubs with various MOPs to convey smoothly in a solitary system while protecting the high bi-directional information conveyance execution, which was 
+assessed through the two reproductions and testbed tests. At last, there are take a shot at supporting P2P correspondence inside RPL system, which adequately consolidates the upward and descending routing ability of RPL.
+
+
+\section{METHODS}
+
+
+This paper  protocol mainly depends upon on one aspect of RPL protocol which is RPL downward  routing RPL itself is quit broad topic so I tried just to include RPL DR. simulation and placement producers were grounded on  formal processes and instruments defined a priori by the authors.
+
+This is not broader review of literature focused on the policy of RPL I firstly understand the concept of RPL in IOT   and then select some researcher papers on DR. \newline
+
+\textbf{ Inclusion criteria included}
+\begin{itemize}
+\item	Short intro of RPL 
+\item	Studies on priors Testbed of RPL Upward and downward Routing
+\item	Challenges in RPL 
+\item	Support for RPL DR (improvement but why)
+\item	low power Lossy network (LLN)
+\item	Rpl downward routing problem due to upward routing 
+\item	open area for research in RPL 
+\begin{large}
+\newline
+
+ \textbf{ Exclusion criteria excluded}
+
+\end{large}
+
+\item	RPL mobility and its issues 
+\item	RPL load balancing 
+\item	RPL interoperability 
+\item	RPL multicast
+\item	RPL multi sink
+\item	RPL upward routing 
+\item	RPL Multi instance 
+\item	Performance comparison with other entity 
+\item	Security   
+\item	RPL interference 
+\item	RPL DR research paper in other language rather than English 
+
+\end{itemize} 
+
+I searched IEEExplore.ieee.org from 2010 to 2019. The concluding IEEE search was conducted on July 6, 2018 I also tried to focus on different paper reference list for analysis to isolate potential papers.
+
+I found 20 articles from 2010 to 2019 from which 10 articles are included in my paper. These papers not only providing a base or why (downward routing) DR is important but also discuss some improvements in field placement experience.
+
+\section{RESULTS}
+This survey article tries to find the best solution for RPL Downward routing I found 20 articles from 2010 to 2019 from which 10 articles are included in my paper. These papers not only providing a base or why (downward routing) DR is important but also discuss some improvements in field placement experience. Plus a analysis of the reference paper. In mid these paper, for this motivated review on the RPL DR.  
+
+RPL work at large scale was started from 2012 after its RFC standard before that some researcher suggests that  E. J. Martocci [9] number of application are need continuously downward routing for low power and constrained device e.g. (AMI meter), Kim et al [13][14] [15] propose the importance of RPL DR, show some ground providing field of placement experiments.  Kim et al in [12] show the problem and it short time solution [12]-[15]   papers not only alleviate the RPL downward routing problem but also tells the importance of RPL DR
+
+
+\subsubsection{RPL DR need solution}	
+
+Despite the fact that RPL centers essentially around upward traffic conveyance, numerous basic sensor checking applications, for example, AMI, require electric meters to be 'arranged' or impelled the descending way. Additionally, the utilization of TCP, as well as application layer ACKs, will order bi-directional availability [11]
+
+Finding dependable descending courses for RPL in unique remote situations is an imperative yet at the same time a (generally) open research region  [12]
+
+As to and a good activity of the two MOPs in RPL, numerous intriguing issues have been raised by research network. Be that as it may, progressively precise and substantial scale exploratory investigations are expected to give persuading results. Additionally, it is amazing that non-putting away mode isn't executed in any official open RPL implementation.7 besides, as vital future work, we trust that the examination ought to go past interoperability between the two MOPs and look to improve the execution of blended MOP organizes in genuine conditions [13][14][15]
+
+
+
+\section{Discussion} 
+Istomin et al. [12] uncovered an adaptability issue of RPL's 
+descending directing. They played out a reenactment investigation of 
+ContikiRPL and TinyRPL utilizing COOJA test system and appeared 
+that RPL's downlink fails to meet expectations dispersal conventions, 
+for example, Trickle, as far as unwavering quality, inactivity and memory 
+overhead. In particular, despite the fact that RPL outflanks Tricklebased 
+dispersal in meager topologies on account of connection layer 
+retransmissions, both ContikiRPL and TinyRPL have versatility 
+issues and experience execution corruption in high 
+thickness situations. Between the two, ContikiRPL performs 
+more awful than TinyRPL because of neighbor table flood, visit 
+worldwide fixes, and topology beats. Despite the fact that the creators 
+unequivocally note that the reenactment condition isn't adequate 
+to characterize the mind boggling design of a city, they put forth a valiant effort 
+to give practical outcomes: designing the reenactment topologies 
+as indicated by the genuine LLN organizations for savvy city 
+applications and setting the clamor floor and variety esteems 
+as per the estimations in a few testbeds, rural areas, 
+thickly occupied regions and a college grounds. 
+Then again, it has been realized that RPL's two MOPs 
+for descending directing have their own shortcomings; putting away 
+mode has memory overhead while non-putting away mode endures 
+from long bundle header and long bounce remove . 
+Various examinations have researched how to proficiently 
+utilize these two MOPs, which is a standard-related point. 
+Kiraly et al. [14] concentrated on memory overhead of a storingmode 
+organize, and structured D-RPL to address the issue. 
+Under D-RPL, every hub multicasts a descending parcel if 
+the goal is excluded in its course table, which 
+empowers descending parcel conveyance with little course table size. 
+However, the creators don't give any exploratory outcomes 
+which are basic to assess the multicast execution. 
+Duquennoy et al. [14] diminished the memory estimate required for 
+each course table passage of putting away mode by utilizing Bloom channel, 
+furthermore, demonstrate its adaptability through testbed tests. 
+RPL likewise imagines the utilization of blended MOPs in a solitary 
+system and RFC6550 expresses; "RPL does not bolster mixedmode 
+activity, where a few hubs source course and other 
+store directing tables: future augmentations to RPL may bolster 
+this method of activity". Gan et al.  take the blended MOP 
+way to deal with mitigate memory overhead of putting away mode and 
+structure MERPL that sharply utilizes non-putting away mode 
+in a putting away mode arrange. Under MERPL, when a hub endures 
+absence of memory, it sends its course table passages to the 
+LBR and expels the passages from its steering table, which 
+empowers source steering for those passages. Notwithstanding, MERPL 
+was assessed utilizing reenactments just, which did not demonstrate the 
+real practices on asset compelled hubs in genuine channel 
+situations. Ko et al.[13] demonstrated that there exists a genuine 
+network issue when two MOPs are blended inside 
+a solitary system. To address this issue, the creators proposed 
+DualMOP-RPL that underpins hubs with various MOPs to 
+impart nimbly in a solitary system while saving 
+the high bi-directional information conveyance execution, which was 
+assessed through the two reenactments and testbed tests 
+
+About proficient and well-matched process of the two Mode of operation in RPL there are a lot of work is needed due to its newness and heterogeneity. After above number of studies still there is lack of knowledge in RPL DR need improvement. Still, more systematic and large-scale experimental studies are needed to provide better results. Additionally, it is astonishing that non-putting away mode isn't actualized in any official open RPL implementation.7 Moreover, as essential future work, we trust that  the exploration ought to go past interoperability between  the two MOPs and look to improve the execution of  blended MOP organizes in genuine situations
+
+
+
+\section{Conclusion}
+I found 35 articles from 2009 to 2019 from which 15 articles are included in my paper, it's problem Kim el give limited approach solution but it starting one completely new and heterogeneous concept for RPL DR he start the wheel for RPL DR. As to and a good activity of the two MOPs in RPL, numerous intriguing issues have been raised by research network. Be that as it may, progressively precise and substantial scale exploratory investigations are expected to give persuading results. Additionally, it is amazing that non-putting away mode isn't executed in any official open RPL implementation it is difficult for researcher to find Reliable DR for RPL in WSN it is main but still it is an open research area for researcher on RPL. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+
+
+\begin{thebibliography}{1} 
+
+\bibitem{IEEEhowto:kopka}
+T. Winter et al., “RPL: IPv6 routing protocol for low-power and lossy networks,” Internet Eng. Task Force, Fremont, CA, USA, RFC 6550, Mar. 2012. 
+\bibitem{IEEEhowto:kopka}
+N. Tsiftes, J. Eriksson, and A. Dunkels, “Low-power wireless IPv6 routing with ContikiRPL,” in Proc. ACM/IEEE Int. Conf. Inf. Process.
+Sensor Netw. (IPSN), Stockholm, Sweden, 2010, pp. 406–407.
+\bibitem{IEEEhowto:kopka}
+O. Gnawali, R. Fonseca, K. Jamieson, D. Moss, and P. Levis,
+“Collection tree protocol,” in Proc. ACM Int. Conf. Embedded Netw.
+Sensor Syst. (SenSys), Berkeley, CA, USA, 2009, pp. 1–14.
+
+\bibitem{IEEEhowto:kopka}
+H.-S. Kim et al., “MarketNet: An asymmetric transmission powerbased
+wireless system for managing e-price tags in markets,” in
+Proc. ACM Int. Conf. Embedded Netw. Sensor Syst. (SenSys), Seoul, South Korea, Nov. 2015, pp. 281–294.
+
+
+\bibitem{IEEEhowto:kopka}
+E. K. Pister, E. P. Thubert, S. Dwars, and T. Phinney, “Industrial routing requirements in low-power and lossy networks,” Internet Eng. Task
+Force, Fremont, CA, USA, RFC 5673, Oct. 2009.
+
+\bibitem{IEEEhowto:kopka}
+A. Brandt, J. Buron, and G. Porcu, “Home automation routing requirements
+in low-power and lossy networks,” Internet Eng. Task Force,
+Fremont, CA, USA, RFC 5826, Apr. 2010
+
+\bibitem{IEEEhowto:kopka}
+E. J. Martocci, P. D. Mil, N. Riou, and W. Vermeylen, “Building automation routing requirements in low-power and lossy networks,” Internet Eng. Task Force, Fremont, CA, USA, RFC 5867, Jun. 2010.
+\bibitem
+N. Khelifi, S. Oteafy, H. Hassanein, and H. Youssef, “Proactive
+maintenance in RPL for 6LowPAN,” in Proc. Int. Conf. Wireless
+Commun. Mobile Comput. (IWCMC), Dubrovnik, Croatia, Aug. 2015, pp. 993–999.
+
+
+\bibitem{IEEEhowto:kopka}
+ H.-S. Kim, M.-S. Lee, Y.-J. Choi, J. Ko, and S. Bahk, “Reliable
+and energy-efficient downward packet delivery in asymmetric
+transmission power-based networks,” ACM Transactions on
+Sensor Networks (TOSN), vol. 12, no. 4, p. 34, 2016.
+
+\bibitem{IEEEhowto:kopka}
+H.-S. Kim, H. Cho, M.-S. Lee, J. Paek, J. Ko, and S. Bahk,
+“Marketnet: An asymmetric transmission power-based wireless
+system for managing e-price tags in markets,” in Proceedings
+of the 13th ACM Conference on Embedded Networked Sensor
+Systems. ACM, 2015, pp. 281–294.
+\bibitem{IEEEhowto:kopka}
+J. Martocci, P. De Mil, N. Riou, and W. Vermeylen, “Building
+automation routing requirements in low-power and lossy
+networks,” Tech. Rep., 2010.
+\bibitem{IEEEhowto:kopka}
+T. Istomin, C. Kiraly, and G. P. Picco, “Is rpl ready for
+actuation? a comparative evaluation in a smart city scenario,” in
+European Conference on Wireless Sensor Networks. Springer,
+2015, pp. 291–299.
+\bibitem{IEEEhowto:kopka}
+W. Gan, Z. Shi, C. Zhang, L. Sun, and D. Ionescu, “Merpl: A
+more memory-efficient storing mode in rpl,” in 2013 19th IEEE
+International Conference on Networks (ICON). IEEE, 2013,
+pp. 1–5.
+\bibitem{IEEEhowto:kopka}
+J. Ko, J. Jeong, J. Park, J. A. Jun, O. Gnawali, and J. Paek,
+“Dualmop-rpl: Supporting multiple modes of downward routing
+in a single rpl network,” ACM Transactions on Sensor Networks
+(TOSN), vol. 11, no. 2, p. 39, 2015.
+\bibitem{IEEEhowto:kopka}
+J. Ko, J. Jeong, J. Park, J. A. Jun, O. Gnawali, and J. Paek,
+“Dualmop-rpl: Supporting multiple modes of downward routing
+in a single rpl network,” ACM Transactions
+
+
+\end{thebibliography}
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
